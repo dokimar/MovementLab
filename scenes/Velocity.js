@@ -5,6 +5,7 @@ class Velocity extends Phaser.Scene {
 
     create() {
         // variables and settings
+        this.MAX_VEL = -350;
         this.physics.world.gravity.y = 1000;
 
         // set bg color
@@ -61,7 +62,7 @@ class Velocity extends Phaser.Scene {
         // check keyboard input
         if(cursors.left.isDown) {
             // set alien velocity here (.setVelocityX())
-            this.alien.setVelocityX(-this.MAX_VELOCITY);
+            this.alien.setVelocityX(-this.MAX_VEL);
             // A negative value moves left
 
 
@@ -75,7 +76,7 @@ class Velocity extends Phaser.Scene {
         } else if(cursors.right.isDown) {
             // Set alien velocity here (.setVelocityX())
             // A positive value moves right
-            this.alien.setVelocityX(this.MAX_VELOCITY);
+            this.alien.setVelocityX(this.MAX_VEL);
 
             // Animation and arrow key tinting
             this.alien.resetFlip();
