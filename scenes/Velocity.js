@@ -96,8 +96,8 @@ class Velocity extends Phaser.Scene {
         // wrap physics object(s) .wrap(gameObject, padding)
         this.physics.world.wrap(this.cloud01, this.cloud01.width/2);
         this.physics.world.wrap(this.cloud02, this.cloud02.width/2);
-        this.physics.world.wrap(this.alien, 0);
+        
         // add alien world wrap line here
-
+        this.physics.world.wrap(this.alien, 0);
     }
 }
