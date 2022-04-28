@@ -9,8 +9,8 @@ class Jump extends Phaser.Scene {
         this.MAX_X_VEL = 500;   // pixels/second
         this.MAX_Y_VEL = 5000;
         this.DRAG = 600;    // DRAG < ACCELERATION = icy slide
-        this.JUMP_VEL = -2000;
-        this.physics.world.gravity.y = 10000;
+        this.JUMP_VEL = -1000;
+        this.physics.world.gravity.y = 3000;
 
         // set bg color
         this.cameras.main.setBackgroundColor('#227B96');
