@@ -5,7 +5,7 @@ class Velocity extends Phaser.Scene {
 
     create() {
         // variables and settings
-        this.MAX_VELOCITY = -350;
+        this.MAX_VELOCITY = 350;
         this.physics.world.gravity.y = 1000;
 
         // set bg color
